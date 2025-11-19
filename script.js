@@ -19,6 +19,26 @@ document.querySelectorAll('.main-nav a').forEach(link => {
   });
 });
 
+// Meniu mobil (hamburger)
+const navToggle = document.querySelector('.nav-toggle');
+const mainNav = document.querySelector('.main-nav');
+
+if (navToggle && mainNav) {
+  navToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('open');
+    navToggle.classList.toggle('open');
+  });
+
+  // Când dai click pe un link din meniu pe mobil, închidem meniul
+  mainNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      navToggle.classList.remove('open');
+    });
+  });
+}
+
+
 // Lightbox pentru poze din galerie
 const galerieImagini = document.querySelectorAll('.galerie-img');
 const lightbox = document.getElementById('lightbox');
