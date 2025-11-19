@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Aranjamente Florale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font drăguț -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Meniu sus -->
+  <header class="main-header">
+    <div class="logo">Aranjamente florale Bucuresti</div>
+    <nav class="main-nav">
+      <a href="#acasa">Acasă</a>
+      <a href="#tematica">Tematică</a>
+      <a href="#fotografii">Fotografii</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Secțiune Acasă / Hero -->
+  <section id="acasa" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Aranjamente florale pentru orice moment special</h1>
+      <p>Buchete și aranjamente create manual, cu grijă și pasiune, pentru zile de naștere, sărbători și momente de neuitat.</p>
+      <a href="#tematica" class="btn-primary">Vezi tematicile</a>
+    </div>
+  </section>
+
+  <!-- Tematică -->
+  <section id="tematica" class="section">
+    <h2>Tematică aranjamente</h2>
+    <p class="section-subtitle">Alege aranjamentul potrivit pentru ocazia ta.</p>
+
+    <div class="cards-grid">
+      <article class="tema-card">
+        <h3>Zi de naștere</h3>
+        <p>Buchete vesele, colorate, pentru a sărbători oamenii dragi din viața ta.</p>
+      </article>
+
+      <article class="tema-card">
+        <h3>Crăciun</h3>
+        <p>Aranjamente cu verdeață, conuri, lumânări și accente aurii sau roșii.</p>
+      </article>
+
+      <article class="tema-card">
+        <h3>Paște</h3>
+        <p>Compoziții luminoase, pastelate, cu flori de sezon și decoruri delicate.</p>
+      </article>
+
+      <article class="tema-card">
+        <h3>Ziua Îndrăgostiților</h3>
+        <p>Buchete romantice, cu trandafiri și detalii elegante pentru persoana iubită.</p>
+      </article>
+
+      <article class="tema-card">
+        <h3>Alte ocazii</h3>
+        <p>Onomastici, aniversări, evenimente corporate sau simple gesturi de „mulțumesc”.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Fotografii -->
+  <section id="fotografii" class="section section-light">
+    <h2>Galerie foto</h2>
+    <p class="section-subtitle">Câteva exemple de aranjamente realizate.</p>
+
+    <div class="gallery-grid">
+      <!-- Schimbă imaginile cu pozele tale, păstrate în folderul /imagini -->
+      <img src="imagini/aranjament1.jpg" alt="Aranjament zi de naștere" class="galerie-img">
+      <img src="imagini/aranjament2.jpg" alt="Aranjament Crăciun" class="galerie-img">
+      <img src="imagini/aranjament3.jpg" alt="Aranjament Paște" class="galerie-img">
+      <img src="imagini/aranjament4.jpg" alt="Aranjament Ziua Îndrăgostiților" class="galerie-img">
+      <img src="imagini/aranjament5.jpg" alt="Buchet elegant" class="galerie-img">
+      <img src="imagini/aranjament6.jpg" alt="Aranjament masă festivă" class="galerie-img">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+  <h2>Contact</h2>
+  <p class="section-subtitle">Pentru comenzi sau informații mă poți contacta aici:</p>
+
+  <div class="contact-layout contact-simple">
+    <div class="contact-info">
+      <p><strong>Email:</strong> nume.tau@gmail.com</p>
+      <p><strong>Telefon:</strong> 07xx xxx xxx</p>
+      <p><strong>Program:</strong> Luni – Vineri, 09:00 – 18:00</p>
+
+      <a class="btn-primary" 
+         href="https://wa.me/40NUMARUL_TAU?text=Bună!%20Aș%20dori%20un%20aranjament%20floral." 
+         target="_blank">
+         Scrie-mi pe WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; <span id="year"></span> FlorArt • Aranjamente florale personalizate</p>
+  </footer>
+
+  <!-- Lightbox pentru poze -->
+  <div id="lightbox" class="lightbox hidden">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Imagine mărită">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
