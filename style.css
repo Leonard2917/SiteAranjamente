@@ -179,6 +179,47 @@ body {
   font-size: 0.95rem;
 }
 
+.tematic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.tematic-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.tematic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.tematic-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tematic-card h3 {
+  margin: 15px 0 6px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.tematic-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+
 /* Tematică – carduri */
 .cards-grid {
   display: grid;
