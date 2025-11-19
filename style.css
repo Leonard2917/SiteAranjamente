@@ -93,8 +93,9 @@ body {
 .hero {
   position: relative;
   min-height: 100vh;
-  background-image: url("imagini/aranjament-hero.jpg"); /* schimbă cu poza ta */
+  background-image: url("imagini/aranjament1.jpg"); /* schimbă cu poza ta */
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
